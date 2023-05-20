@@ -40,4 +40,6 @@ public class EventController {
     public List<Event> getById(@PathVariable String date){
         return eventService.getByDate(date);
     }
+
+
 }

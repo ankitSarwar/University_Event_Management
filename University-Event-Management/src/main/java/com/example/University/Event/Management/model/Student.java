@@ -16,7 +16,7 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="StudentId_Id") // unique = true
+    @Column(name="StudentId_Id")
     private Integer studentId;
 
     @Column(name="First_Name")

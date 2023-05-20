@@ -35,7 +35,7 @@ public class StudentService {
     @Transactional
     public void UpdateDepartment(Department department, Integer id) {
 //        int value=Department.ordinal();
-        String enumValue=department.name();
+        String enumValue=department.name();  // convert to string because sql don't know of Department Enum
         studentDao.modify(enumValue,id);
     }
 
